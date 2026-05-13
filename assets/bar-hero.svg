@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Барная стойка пивного бара</title>
+  <desc id="desc">Стилизованный интерьер пивного бара с кранами, бокалами и теплым светом.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#263d35"/>
+      <stop offset="0.5" stop-color="#17211c"/>
+      <stop offset="1" stop-color="#6e312b"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" x2="1">
+      <stop offset="0" stop-color="#6f3c22"/>
+      <stop offset="0.5" stop-color="#b66f2d"/>
+      <stop offset="1" stop-color="#4c271c"/>
+    </linearGradient>
+    <linearGradient id="beer" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd16b"/>
+      <stop offset="0.45" stop-color="#d7952b"/>
+      <stop offset="1" stop-color="#7c3f18"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#ffe1a0"/>
+      <stop offset="0.55" stop-color="#d7952b"/>
+      <stop offset="1" stop-color="#d7952b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#wall)"/>
+  <rect y="640" width="1600" height="360" fill="#141915"/>
+  <ellipse cx="1060" cy="255" rx="280" ry="180" fill="url(#lamp)" opacity="0.45" filter="url(#soft)"/>
+  <ellipse cx="1320" cy="330" rx="220" ry="140" fill="url(#lamp)" opacity="0.32" filter="url(#soft)"/>
+
+  <g opacity="0.5">
+    <rect x="870" y="95" width="14" height="312" fill="#111613"/>
+    <rect x="1175" y="80" width="14" height="354" fill="#111613"/>
+    <rect x="1480" y="120" width="14" height="308" fill="#111613"/>
+  </g>
+
+  <g>
+    <ellipse cx="877" cy="420" rx="88" ry="26" fill="#251710"/>
+    <path d="M804 170h146l-34 248h-78z" fill="#d7952b"/>
+    <path d="M826 178h102l-25 206h-54z" fill="#fff2cd" opacity="0.2"/>
+    <ellipse cx="877" cy="170" rx="74" ry="24" fill="#ffe1a0"/>
+
+    <ellipse cx="1182" cy="450" rx="96" ry="28" fill="#251710"/>
+    <path d="M1100 145h164l-38 300h-88z" fill="#d7952b"/>
+    <path d="M1128 154h108l-28 250h-58z" fill="#fff2cd" opacity="0.18"/>
+    <ellipse cx="1182" cy="145" rx="82" ry="25" fill="#ffe1a0"/>
+
+    <ellipse cx="1487" cy="430" rx="84" ry="25" fill="#251710"/>
+    <path d="M1417 190h140l-32 235h-76z" fill="#d7952b"/>
+    <path d="M1440 198h94l-24 194h-50z" fill="#fff2cd" opacity="0.18"/>
+    <ellipse cx="1487" cy="190" rx="70" ry="22" fill="#ffe1a0"/>
+  </g>
+
+  <g transform="translate(640 310)">
+    <rect x="0" y="0" width="120" height="340" rx="18" fill="#1e2923"/>
+    <rect x="28" y="-120" width="64" height="138" rx="14" fill="#1e2923"/>
+    <rect x="-72" y="-118" width="264" height="44" rx="22" fill="#26382f"/>
+    <circle cx="60" cy="-96" r="18" fill="#d7952b"/>
+    <path d="M60 24c-78 0-122 42-122 112h70c0-30 18-50 52-50 35 0 54 20 54 50h70c0-70-45-112-124-112z" fill="#d7952b"/>
+    <rect x="32" y="194" width="56" height="156" rx="14" fill="#d7952b"/>
+  </g>
+
+  <g transform="translate(820 336)">
+    <rect x="0" y="0" width="90" height="300" rx="16" fill="#1d2821"/>
+    <rect x="22" y="-94" width="48" height="110" rx="12" fill="#1d2821"/>
+    <rect x="-48" y="-92" width="186" height="38" rx="19" fill="#26382f"/>
+    <circle cx="46" cy="-73" r="14" fill="#d7952b"/>
+    <path d="M46 22c-58 0-92 32-92 86h52c0-23 14-38 40-38s41 15 41 38h52c0-54-34-86-93-86z" fill="#d7952b"/>
+    <rect x="24" y="170" width="44" height="138" rx="12" fill="#d7952b"/>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="0" y="650" width="1600" height="110" fill="url(#wood)"/>
+    <rect x="0" y="736" width="1600" height="36" fill="#2a1812" opacity="0.72"/>
+    <rect x="0" y="628" width="1600" height="28" fill="#d7952b"/>
+  </g>
+
+  <g transform="translate(1030 540)">
+    <path d="M34 10h88v96c0 45-20 70-44 70s-44-25-44-70z" fill="#fff8df" opacity="0.23"/>
+    <path d="M40 34h76v78c0 36-17 56-38 56s-38-20-38-56z" fill="url(#beer)"/>
+    <rect x="48" y="14" width="60" height="18" rx="9" fill="#fff4cb"/>
+    <path d="M122 56c34 0 48 18 48 44s-14 44-48 44v-24c17 0 24-7 24-20s-7-20-24-20z" fill="#fff8df" opacity="0.28"/>
+  </g>
+
+  <g transform="translate(1240 560)">
+    <path d="M20 0h72v88c0 36-16 56-36 56s-36-20-36-56z" fill="#fff8df" opacity="0.22"/>
+    <path d="M26 28h60v66c0 27-13 42-30 42s-30-15-30-42z" fill="url(#beer)"/>
+    <rect x="32" y="4" width="48" height="16" rx="8" fill="#fff4cb"/>
+  </g>
+
+  <g transform="translate(375 572)">
+    <path d="M0 190c36-120 218-128 264 0z" fill="#111613"/>
+    <circle cx="126" cy="56" r="54" fill="#111613"/>
+  </g>
+
+  <g transform="translate(210 592)" opacity="0.92">
+    <path d="M0 170c24-92 168-104 208 0z" fill="#151c18"/>
+    <circle cx="98" cy="50" r="44" fill="#151c18"/>
+  </g>
+
+  <g opacity="0.22">
+    <rect x="0" y="0" width="1600" height="1000" fill="#000"/>
+    <path d="M0 0h1600v1000H0z" fill="none" stroke="#fff" stroke-opacity="0.07"/>
+  </g>
+</svg>
