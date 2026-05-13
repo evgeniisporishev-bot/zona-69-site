@@ -11,6 +11,7 @@ const galleryModalVideo = document.querySelector("#gallery-modal-video");
 const galleryModalTitle = document.querySelector("#gallery-modal-title");
 const galleryModalCopy = document.querySelector("#gallery-modal-copy");
 const galleryCloseButtons = document.querySelectorAll("[data-gallery-close]");
+const galleryFullscreenButton = document.querySelector("[data-gallery-fullscreen]");
 const galleryPreviousButton = document.querySelector("[data-gallery-prev]");
 const galleryNextButton = document.querySelector("[data-gallery-next]");
 let activeGalleryIndex = 0;
@@ -67,6 +68,7 @@ const translations = {
       copy: "Живые моменты из бара: откройте любое видео в большом формате.",
       open: "Смотреть",
       close: "Закрыть галерею",
+      fullscreen: "Во весь экран",
       previous: "Предыдущее видео",
       next: "Следующее видео",
       modalAria: "Галерея ZONA 6/9",
@@ -270,6 +272,7 @@ const translations = {
       copy: "Live moments from the bar: open any video to watch it larger.",
       open: "Watch",
       close: "Close gallery",
+      fullscreen: "Fullscreen",
       previous: "Previous video",
       next: "Next video",
       modalAria: "ZONA 6/9 gallery",
@@ -473,6 +476,7 @@ const translations = {
       copy: "Trenuci iz bara: otvorite bilo koji video u većem prikazu.",
       open: "Pogledaj",
       close: "Zatvori galeriju",
+      fullscreen: "Ceo ekran",
       previous: "Prethodni video",
       next: "Sledeći video",
       modalAria: "Galerija ZONA 6/9",
@@ -734,6 +738,30 @@ const closeGallery = () => {
   galleryModalVideo.load();
 };
 
+const openGalleryFullscreen = async () => {
+  if (!galleryModalVideo) {
+    return;
+  }
+
+  try {
+    if (typeof galleryModalVideo.webkitEnterFullscreen === "function") {
+      galleryModalVideo.webkitEnterFullscreen();
+      return;
+    }
+
+    if (typeof galleryModalVideo.requestFullscreen === "function") {
+      await galleryModalVideo.requestFullscreen();
+      return;
+    }
+
+    if (typeof galleryModal?.requestFullscreen === "function") {
+      await galleryModal.requestFullscreen();
+    }
+  } catch {
+    // Some mobile browsers only allow fullscreen from their native video controls.
+  }
+};
+
 const applyLanguage = (language) => {
   const dictionary = translations[language] || translations.ru;
   currentLanguage = translations[language] ? language : "ru";
@@ -862,6 +890,7 @@ galleryCloseButtons.forEach((button) => {
 
 galleryPreviousButton?.addEventListener("click", () => showGalleryItem(activeGalleryIndex - 1));
 galleryNextButton?.addEventListener("click", () => showGalleryItem(activeGalleryIndex + 1));
+galleryFullscreenButton?.addEventListener("click", openGalleryFullscreen);
 
 document.addEventListener("keydown", (event) => {
   if (!galleryModal?.classList.contains("is-open")) {
