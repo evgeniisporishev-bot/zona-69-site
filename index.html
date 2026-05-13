@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZONA 6/9 - пивной бар</title>
+    <meta
+      name="description"
+      content="Пивной бар ZONA 6/9: крафтовое пиво, закуски, живые встречи и бронирование столов."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ZONA 6/9" data-i18n-aria="brand">
+        <span class="brand-mark">
+          <img src="assets/zona-69-logo.jpg" alt="">
+        </span>
+        <span data-i18n="brand">ZONA 6/9</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация" data-i18n-aria="nav.aria">
+        <a href="#qr-menu" data-i18n="nav.menu">QR menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#snacks" data-i18n="nav.snacks">Закуски</a>
+        <a href="#events" data-i18n="nav.events">События</a>
+        <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="language-switcher" role="group" aria-label="Выбор языка" data-i18n-aria="language.aria">
+          <button class="language-button is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
+          <button class="language-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button class="language-button" type="button" data-lang="sr" aria-pressed="false">SR</button>
+        </div>
+
+        <a class="header-action" href="#booking" data-i18n="nav.book">Забронировать</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Пивной бар ZONA 6/9" data-i18n-aria="hero.aria">
+        <div
+          class="hero-media"
+          role="img"
+          aria-label="Барная стойка с кранами крафтового пива"
+          data-i18n-aria="hero.mediaAria"
+        ></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">6 кранов и 20+ видов пива из России, Сербии и Бельгии</p>
+          <h1 data-i18n="hero.title">ZONA 6/9</h1>
+          <p class="hero-copy" data-i18n="hero.copy">
+            Пивной бар в центре города для спокойных вечеров, шумных матчей и встреч, которые не хочется заканчивать.
+          </p>
+          <div class="hero-logo" aria-hidden="true">
+            <img src="assets/zona-69-logo.jpg" alt="">
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#booking" data-i18n="hero.book">Стол на вечер</a>
+            <a class="button button-secondary" href="#qr-menu" data-i18n="hero.menu">QR menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Краткая информация" data-i18n-aria="quick.aria">
+        <article>
+          <span class="info-label" data-i18n="quick.today">Сегодня</span>
+          <strong>16:00 - 00:00</strong>
+        </article>
+        <article>
+          <span class="info-label" data-i18n="quick.address">Адрес</span>
+          <strong data-i18n="quick.addressValue">Суботица, Трг Цара Јована Ненада 6-10</strong>
+        </article>
+        <article>
+          <span class="info-label" data-i18n="quick.booking">Бронь</span>
+          <strong>+381 62 932 66 64</strong>
+        </article>
+      </section>
+
+      <section class="section intro">
+        <div>
+          <p class="section-kicker" data-i18n="intro.kicker">Атмосфера</p>
+          <h2 data-i18n="intro.title">Бар, где знают вкус пива и не торопят разговор.</h2>
+        </div>
+        <p data-i18n="intro.copy">
+          Наливаем крафтовое и классическое пиво: от свежего лагера до IPA, стаута и бельгийских сортов.
+          К каждому бокалу подберем закуску, а к каждому вечеру - правильный темп.
+        </p>
+      </section>
+
+      <section class="section qr-menu-section" id="qr-menu">
+        <div class="qr-menu-copy">
+          <p class="section-kicker" data-i18n="qrMenu.kicker">QR menu</p>
+          <h2 data-i18n="qrMenu.title">Сканируйте меню</h2>
+          <p data-i18n="qrMenu.copy">
+            Откройте меню ZONA 6/9 на телефоне: наведите камеру на QR-код.
+          </p>
+        </div>
+
+        <div class="qr-menu-card">
+          <img src="assets/qr-menu.png" alt="QR menu ZONA 6/9" data-i18n-alt="qrMenu.imageAlt">
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="section-kicker" data-i18n="gallery.kicker">Gallery</p>
+            <h2 data-i18n="gallery.title">ZONA 6/9 in motion</h2>
+          </div>
+          <p class="gallery-copy" data-i18n="gallery.copy">
+            A few live moments from the bar. Open any card to watch it larger.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <article
+            class="gallery-card gallery-card-large"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-bar.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.bar.title"
+            data-gallery-copy-key="gallery.items.bar.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-bar.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.bar.label">Video</span>
+              <h3 data-i18n="gallery.items.bar.title">Opening night</h3>
+              <p data-i18n="gallery.items.bar.copy">Fresh taps, real evenings, and everything close enough to feel.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-atmosphere.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.atmosphere.title"
+            data-gallery-copy-key="gallery.items.atmosphere.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-atmosphere.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.atmosphere.label">Video</span>
+              <h3 data-i18n="gallery.items.atmosphere.title">Evening atmosphere</h3>
+              <p data-i18n="gallery.items.atmosphere.copy">Warm light, cold beer, and the ZONA 6/9 mood.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-2246.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.moment1.title"
+            data-gallery-copy-key="gallery.items.moment1.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-2246.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.moment1.label">Video</span>
+              <h3 data-i18n="gallery.items.moment1.title">Games</h3>
+              <p data-i18n="gallery.items.moment1.copy">A close look at the ZONA 6/9 evening.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-2427.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.moment2.title"
+            data-gallery-copy-key="gallery.items.moment2.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-2427.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.moment2.label">Video</span>
+              <h3 data-i18n="gallery.items.moment2.title">Pouring the night</h3>
+              <p data-i18n="gallery.items.moment2.copy">The bar in motion, glass by glass.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-2421.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.moment3.title"
+            data-gallery-copy-key="gallery.items.moment3.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-2421.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.moment3.label">Video</span>
+              <h3 data-i18n="gallery.items.moment3.title">Room mood</h3>
+              <p data-i18n="gallery.items.moment3.copy">The kind of evening that feels better in person.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-2420.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.moment4.title"
+            data-gallery-copy-key="gallery.items.moment4.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-2420.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.moment4.label">Video</span>
+              <h3 data-i18n="gallery.items.moment4.title">Beer close-up</h3>
+              <p data-i18n="gallery.items.moment4.copy">Fresh pours, dark tones, and a proper bar glow.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-2409.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.moment5.title"
+            data-gallery-copy-key="gallery.items.moment5.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-2409.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.moment5.label">Video</span>
+              <h3 data-i18n="gallery.items.moment5.title">ZONA 6/9 lights</h3>
+              <p data-i18n="gallery.items.moment5.copy">Small details, strong mood, and the glow of the bar.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-2408.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.moment6.title"
+            data-gallery-copy-key="gallery.items.moment6.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-2408.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.moment6.label">Video</span>
+              <h3 data-i18n="gallery.items.moment6.title">Our fridges</h3>
+              <p data-i18n="gallery.items.moment6.copy">A short piece of the ZONA 6/9 rhythm.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+
+          <article
+            class="gallery-card"
+            data-gallery-item
+            data-gallery-src="assets/gallery-zona-2364.mp4"
+            data-gallery-type="video/mp4"
+            data-gallery-title-key="gallery.items.moment7.title"
+            data-gallery-copy-key="gallery.items.moment7.copy"
+            tabindex="0"
+          >
+            <video muted loop playsinline preload="none" poster="assets/gallery-zona-2364.jpg" aria-hidden="true"></video>
+            <div class="gallery-card-content">
+              <span data-i18n="gallery.items.moment7.label">Video</span>
+              <h3 data-i18n="gallery.items.moment7.title">Bar counter</h3>
+              <p data-i18n="gallery.items.moment7.copy">One more glimpse into the bar's real atmosphere.</p>
+              <button class="gallery-open" type="button" data-i18n="gallery.open">Open</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="beer">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="beer.kicker">Барная карта</p>
+          <h2 data-i18n="beer.title">Пиво на кранах</h2>
+        </div>
+
+        <div class="tap-list">
+          <div class="tap-row tap-row-head">
+            <span data-i18n="beer.columns.name">Сорт</span>
+            <span data-i18n="beer.columns.price">Цена</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">ERNEST Lager 0.5l</span>
+            <span class="tap-price">320 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">ERNEST Lager 0.33l</span>
+            <span class="tap-price">240 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">RAVANGRAD Red Ale 0.5l</span>
+            <span class="tap-price">390 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">RAVANGRAD Red Ale 0.33l</span>
+            <span class="tap-price">290 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">HONEY I'M DRUNK DIPA 0.5l</span>
+            <span class="tap-price">490 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">HONEY I'M DRUNK DIPA 0.33l</span>
+            <span class="tap-price">390 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">PONTES Pale Ale 0.5l</span>
+            <span class="tap-price">350 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">PONTES Pale Ale 0.33l</span>
+            <span class="tap-price">250 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">MADRI Pils 0.5l</span>
+            <span class="tap-price">280 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">MADRI Pils 0.25l</span>
+            <span class="tap-price">210 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">JELEN Svetlo pivo 0.5l</span>
+            <span class="tap-price">220 ₽</span>
+          </div>
+          <div class="tap-row">
+            <span class="tap-name">JELEN Svetlo pivo 0.33l</span>
+            <span class="tap-price">200 ₽</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section snacks" id="snacks">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="snacks.kicker">Закуски</p>
+          <h2 data-i18n="snacks.title">К пиву</h2>
+        </div>
+
+        <div class="snack-list">
+          <article>
+            <div>
+              <h3 data-i18n="snacks.items.peanuts.name">Соленый арахис</h3>
+              <p data-i18n="snacks.items.peanuts.copy">Классическая соленая закуска к лагерю, пилсу и элю.</p>
+            </div>
+            <strong data-i18n="snacks.priceAsk">Уточните в баре</strong>
+          </article>
+          <article>
+            <div>
+              <h3 data-i18n="snacks.items.pistachios.name">Фисташки</h3>
+              <p data-i18n="snacks.items.pistachios.copy">Соленые фисташки для спокойного вечера за бокалом.</p>
+            </div>
+            <strong data-i18n="snacks.priceAsk">Уточните в баре</strong>
+          </article>
+          <article>
+            <div>
+              <h3 data-i18n="snacks.items.driedMeat.name">5 сортов вяленого мяса</h3>
+              <p data-i18n="snacks.items.driedMeat.copy">Мясная нарезка к крафтовому и классическому пиву.</p>
+            </div>
+            <strong data-i18n="snacks.priceAsk">Уточните в баре</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section events" id="events">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="events.kicker">Календарь</p>
+          <h2 data-i18n="events.title">Ближайшие вечера</h2>
+        </div>
+
+        <div class="event-grid">
+          <article>
+            <time datetime="2026-05-14" data-i18n="events.items.tasting.date">Четверг, 14 мая</time>
+            <h3 data-i18n="events.items.tasting.name">4 новых сорта крафтового пива</h3>
+            <p data-i18n="events.items.tasting.copy">В четверг открываем новые вкусы для тех, кто любит пробовать что-то свежее.</p>
+          </article>
+          <article>
+            <time data-i18n="events.items.football.date">Новинка на кране</time>
+            <h3 data-i18n="events.items.football.name">Ravangrad High Five</h3>
+            <p data-i18n="events.items.football.copy">New England, 6.5% alcohol. Новый сорт разливного пива уже в ZONA 6/9.</p>
+          </article>
+          <article>
+            <time data-i18n="events.items.acoustic.date">Скоро</time>
+            <h3 data-i18n="events.items.acoustic.name">Следите за обновлениями</h3>
+            <p data-i18n="events.items.acoustic.copy">Анонсы появятся здесь, как только мы подтвердим даты и детали.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section booking-section" id="booking">
+        <div class="booking-copy">
+          <p class="section-kicker" data-i18n="booking.kicker">Бронь</p>
+          <h2 data-i18n="booking.title">Оставьте стол за собой</h2>
+          <p data-i18n="booking.copy">
+            Напишите имя, телефон и время визита. Мы перезвоним и подтвердим бронь.
+          </p>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+          <label>
+            <span data-i18n="form.name">Имя</span>
+            <input name="name" type="text" autocomplete="name" placeholder="Алексей" data-i18n-placeholder="form.namePlaceholder" required>
+          </label>
+
+          <label>
+            <span data-i18n="form.phone">Телефон</span>
+            <input name="phone" type="tel" autocomplete="tel" placeholder="+381 62 932 66 64" required>
+          </label>
+
+          <label>
+            <span data-i18n="form.date">Дата и время</span>
+            <input name="date" type="datetime-local" max="9999-12-31T23:59" required>
+          </label>
+
+          <label>
+            <span data-i18n="form.guests">Гостей</span>
+            <select name="guests" required>
+              <option value="2" data-i18n="form.guestOptions.2">2 гостя</option>
+              <option value="3" data-i18n="form.guestOptions.3">3 гостя</option>
+              <option value="4" data-i18n="form.guestOptions.4">4 гостя</option>
+              <option value="5" data-i18n="form.guestOptions.5">5 гостей</option>
+              <option value="6" data-i18n="form.guestOptions.6">6 гостей</option>
+            </select>
+          </label>
+
+          <button class="button button-primary" type="submit" data-i18n="form.submit">Отправить заявку</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div>
+        <a class="footer-brand" href="#top" data-i18n="brand">ZONA 6/9</a>
+        <p data-i18n="footer.hours">Вс-Чт 16:00 - 00:00, Пт-Сб 16:00 - 02:00</p>
+      </div>
+      <address data-i18n-html="footer.address">
+        Суботица, Трг Цара Јована Ненада 6-10<br>
+        +381 62 932 66 64<br>
+        69zona69zona@gmail.com
+      </address>
+    </footer>
+
+    <div class="gallery-modal" id="gallery-modal" aria-hidden="true">
+      <button class="gallery-modal-backdrop" type="button" data-gallery-close data-i18n-aria="gallery.close">Close gallery</button>
+      <div class="gallery-modal-shell" role="dialog" aria-modal="true" aria-label="Gallery" data-i18n-aria="gallery.modalAria">
+        <button class="gallery-modal-close" type="button" data-gallery-close data-i18n-aria="gallery.close">x</button>
+        <button class="gallery-modal-nav gallery-modal-prev" type="button" data-gallery-prev data-i18n-aria="gallery.previous">‹</button>
+        <div class="gallery-modal-frame">
+          <video id="gallery-modal-video" controls playsinline></video>
+          <div class="gallery-modal-caption">
+            <h3 id="gallery-modal-title"></h3>
+            <p id="gallery-modal-copy"></p>
+          </div>
+        </div>
+        <button class="gallery-modal-nav gallery-modal-next" type="button" data-gallery-next data-i18n-aria="gallery.next">›</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
