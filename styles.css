@@ -323,9 +323,38 @@ h3 {
   background: var(--panel);
 }
 
-.quick-info strong {
+.quick-info-booking {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.quick-info strong,
+.quick-info-link {
   display: block;
   font-size: 21px;
+}
+
+.quick-info-link {
+  width: fit-content;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 208, 138, 0.55);
+  border-radius: 8px;
+  background: var(--amber);
+  color: #0b0b0b;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.quick-info-link:hover,
+.quick-info-link:focus-visible {
+  background: #ffc05b;
+  color: #0b0b0b;
 }
 
 .section {
@@ -366,6 +395,10 @@ h3 {
   margin-bottom: 0;
   color: var(--muted);
   font-size: 19px;
+}
+
+.qr-menu-link {
+  margin-top: 22px;
 }
 
 .qr-menu-card {
@@ -683,6 +716,28 @@ body.is-gallery-open {
 
 .tap-name {
   font-weight: 800;
+}
+
+.tap-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22px;
+  margin-left: 10px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 221, 156, 0.75);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffd58f, #f0a93c);
+  color: #090909;
+  box-shadow: 0 0 22px rgba(240, 169, 60, 0.28);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: translateY(-1px);
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 .tap-price {

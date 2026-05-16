@@ -5,6 +5,7 @@ const bookingButton = bookingForm?.querySelector('button[type="submit"]');
 const languageButtons = document.querySelectorAll("[data-lang]");
 const metaDescription = document.querySelector('meta[name="description"]');
 const languageStorageKey = "beerBarLanguage";
+const todayHoursElements = document.querySelectorAll("[data-today-hours]");
 const galleryCards = Array.from(document.querySelectorAll("[data-gallery-item]"));
 const galleryModal = document.querySelector("#gallery-modal");
 const galleryModalVideo = document.querySelector("#gallery-modal-video");
@@ -28,7 +29,7 @@ const translations = {
     nav: {
       aria: "Основная навигация",
       beer: "Пиво",
-      menu: "QR menu",
+      menu: "Меню",
       gallery: "Галерея",
       snacks: "Закуски",
       events: "События",
@@ -42,7 +43,7 @@ const translations = {
       title: "ZONA 6/9",
       copy: "Пивной бар в центре города для спокойных вечеров, шумных матчей и встреч, которые не хочется заканчивать.",
       book: "Стол на вечер",
-      menu: "QR menu",
+      menu: "Открыть меню",
     },
     quick: {
       aria: "Краткая информация",
@@ -50,6 +51,7 @@ const translations = {
       address: "Адрес",
       addressValue: "Суботица, Трг Цара Јована Ненада 6-10",
       booking: "Бронь",
+      bookingValue: "Забронировать",
     },
     intro: {
       kicker: "Атмосфера",
@@ -58,8 +60,9 @@ const translations = {
     },
     qrMenu: {
       kicker: "QR menu",
-      title: "Сканируйте меню",
-      copy: "Откройте меню ZONA 6/9 на телефоне: наведите камеру на QR-код.",
+      title: "Меню ZONA 6/9",
+      copy: "Откройте меню по ссылке или наведите камеру телефона на QR-код.",
+      open: "Открыть меню",
       imageAlt: "QR menu ZONA 6/9",
     },
     gallery: {
@@ -123,6 +126,7 @@ const translations = {
     beer: {
       kicker: "Барная карта",
       title: "Пиво на кранах",
+      new: "Новинка",
       columns: {
         name: "Сорт",
         price: "Цена",
@@ -195,6 +199,7 @@ const translations = {
       name: "Имя",
       namePlaceholder: "Алексей",
       phone: "Телефон",
+      phonePlaceholder: "+381 XX XXX XX XX",
       date: "Дата и время",
       dateYearError: "Год должен состоять максимум из 4 цифр.",
       guests: "Гостей",
@@ -232,7 +237,7 @@ const translations = {
     nav: {
       aria: "Main navigation",
       beer: "Beer",
-      menu: "QR menu",
+      menu: "Menu",
       gallery: "Gallery",
       snacks: "Snacks",
       events: "Events",
@@ -246,7 +251,7 @@ const translations = {
       title: "ZONA 6/9",
       copy: "A beer bar downtown for relaxed evenings, loud match nights, and meetups you do not want to end.",
       book: "Table tonight",
-      menu: "QR menu",
+      menu: "Open menu",
     },
     quick: {
       aria: "Quick information",
@@ -254,6 +259,7 @@ const translations = {
       address: "Address",
       addressValue: "Subotica, Trg Cara Jovana Nenada 6-10",
       booking: "Booking",
+      bookingValue: "Book a table",
     },
     intro: {
       kicker: "Atmosphere",
@@ -262,8 +268,9 @@ const translations = {
     },
     qrMenu: {
       kicker: "QR menu",
-      title: "Scan the menu",
-      copy: "Open the ZONA 6/9 menu on your phone: point your camera at the QR code.",
+      title: "ZONA 6/9 Menu",
+      copy: "Open the menu by link or point your phone camera at the QR code.",
+      open: "Open menu",
       imageAlt: "ZONA 6/9 QR menu",
     },
     gallery: {
@@ -327,6 +334,7 @@ const translations = {
     beer: {
       kicker: "Tap list",
       title: "Beer on Tap",
+      new: "New",
       columns: {
         name: "Beer",
         price: "Price",
@@ -399,6 +407,7 @@ const translations = {
       name: "Name",
       namePlaceholder: "Alex",
       phone: "Phone",
+      phonePlaceholder: "+381 XX XXX XX XX",
       date: "Date and time",
       dateYearError: "The year must contain no more than 4 digits.",
       guests: "Guests",
@@ -436,7 +445,7 @@ const translations = {
     nav: {
       aria: "Glavna navigacija",
       beer: "Pivo",
-      menu: "QR menu",
+      menu: "Meni",
       gallery: "Galerija",
       snacks: "Grickalice",
       events: "Događaji",
@@ -450,7 +459,7 @@ const translations = {
       title: "ZONA 6/9",
       copy: "Pivski bar u centru grada za mirne večeri, glasne utakmice i susrete koje ne želite da završite.",
       book: "Sto za večeras",
-      menu: "QR menu",
+      menu: "Otvori meni",
     },
     quick: {
       aria: "Kratke informacije",
@@ -458,6 +467,7 @@ const translations = {
       address: "Adresa",
       addressValue: "Subotica, Trg cara Jovana Nenada 6-10",
       booking: "Rezervacije",
+      bookingValue: "Rezerviši",
     },
     intro: {
       kicker: "Atmosfera",
@@ -466,8 +476,9 @@ const translations = {
     },
     qrMenu: {
       kicker: "QR menu",
-      title: "Skenirajte meni",
-      copy: "Otvorite ZONA 6/9 meni na telefonu: usmerite kameru ka QR kodu.",
+      title: "ZONA 6/9 meni",
+      copy: "Otvorite meni putem linka ili usmerite kameru telefona ka QR kodu.",
+      open: "Otvori meni",
       imageAlt: "ZONA 6/9 QR meni",
     },
     gallery: {
@@ -531,6 +542,7 @@ const translations = {
     beer: {
       kicker: "Karta piva",
       title: "Pivo na točilicama",
+      new: "Novo",
       columns: {
         name: "Pivo",
         price: "Cena",
@@ -603,6 +615,7 @@ const translations = {
       name: "Ime",
       namePlaceholder: "Aleksandar",
       phone: "Telefon",
+      phonePlaceholder: "+381 XX XXX XX XX",
       date: "Datum i vreme",
       dateYearError: "Godina može imati najviše 4 cifre.",
       guests: "Gosti",
@@ -645,6 +658,27 @@ const setStoredLanguage = (language) => {
   } catch {
     // The switch still works when localStorage is unavailable.
   }
+};
+
+const getTodayHours = (date = new Date()) => {
+  const day = date.getDay();
+  return day === 5 || day === 6 ? "16:00 - 02:00" : "16:00 - 00:00";
+};
+
+const updateTodayHours = () => {
+  const hours = getTodayHours();
+  todayHoursElements.forEach((element) => {
+    element.textContent = hours;
+  });
+};
+
+const scheduleTodayHoursUpdate = () => {
+  updateTodayHours();
+
+  const now = new Date();
+  const nextMidnight = new Date(now);
+  nextMidnight.setHours(24, 0, 1, 0);
+  window.setTimeout(scheduleTodayHoursUpdate, nextMidnight.getTime() - now.getTime());
 };
 
 const getTranslation = (path, dictionary) =>
@@ -806,6 +840,10 @@ const applyLanguage = (language) => {
   if (bookingButton) {
     bookingButton.textContent = dictionary.form.submit;
   }
+
+  document.querySelectorAll(".tap-badge").forEach((badge) => {
+    badge.textContent = dictionary.beer.new;
+  });
 
   if (galleryModal?.classList.contains("is-open")) {
     renderGalleryModal(activeGalleryIndex);
@@ -971,4 +1009,5 @@ bookingForm?.addEventListener("submit", async (event) => {
   }
 });
 
+scheduleTodayHoursUpdate();
 applyLanguage(currentLanguage);
