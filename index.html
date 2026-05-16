@@ -20,7 +20,7 @@
       </a>
 
       <nav class="nav" aria-label="Основная навигация" data-i18n-aria="nav.aria">
-        <a href="#qr-menu" data-i18n="nav.menu">QR menu</a>
+        <a href="#qr-menu" data-i18n="nav.menu">Меню</a>
         <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
         <a href="#snacks" data-i18n="nav.snacks">Закуски</a>
         <a href="#events" data-i18n="nav.events">События</a>
@@ -57,7 +57,11 @@
           </div>
           <div class="hero-actions">
             <a class="button button-primary" href="#booking" data-i18n="hero.book">Стол на вечер</a>
-            <a class="button button-secondary" href="#qr-menu" data-i18n="hero.menu">QR menu</a>
+            <a
+              class="button button-secondary"
+              href="https://www.figma.com/proto/dhsXQun9HYH52zWlwPw1ep/Untitled?node-id=2089-1072&viewport=2408%2C26266%2C0.72&t=SBdw7EsMMT8IPhjC-1&hide-ui=1&scaling=fill&starting-point-node-id=2089%3A1072&page-id=0%3A1"
+              data-i18n="hero.menu"
+            >Открыть меню</a>
           </div>
         </div>
       </section>
@@ -65,7 +69,7 @@
       <section class="quick-info" aria-label="Краткая информация" data-i18n-aria="quick.aria">
         <article>
           <span class="info-label" data-i18n="quick.today">Сегодня</span>
-          <strong>16:00 - 00:00</strong>
+          <strong data-today-hours>16:00 - 02:00</strong>
         </article>
         <article>
           <span class="info-label" data-i18n="quick.address">Адрес</span>
@@ -95,6 +99,11 @@
           <p data-i18n="qrMenu.copy">
             Откройте меню ZONA 6/9 на телефоне: наведите камеру на QR-код.
           </p>
+          <a
+            class="button button-primary qr-menu-link"
+            href="https://www.figma.com/proto/dhsXQun9HYH52zWlwPw1ep/Untitled?node-id=2089-1072&viewport=2408%2C26266%2C0.72&t=SBdw7EsMMT8IPhjC-1&hide-ui=1&scaling=fill&starting-point-node-id=2089%3A1072&page-id=0%3A1"
+            data-i18n="qrMenu.open"
+          >Открыть меню</a>
         </div>
 
         <div class="qr-menu-card">
@@ -290,12 +299,12 @@
             <span data-i18n="beer.columns.price">Цена</span>
           </div>
           <div class="tap-row">
-            <span class="tap-name">ERNEST Lager 0.5l</span>
-            <span class="tap-price">320 ₽</span>
+            <span class="tap-name">High Five 6.5% 0.5l <span class="tap-badge" data-i18n="beer.new">Новинка</span></span>
+            <span class="tap-price">480 ₽</span>
           </div>
           <div class="tap-row">
-            <span class="tap-name">ERNEST Lager 0.33l</span>
-            <span class="tap-price">240 ₽</span>
+            <span class="tap-name">High Five 6.5% 0.3l <span class="tap-badge" data-i18n="beer.new">Новинка</span></span>
+            <span class="tap-price">380 ₽</span>
           </div>
           <div class="tap-row">
             <span class="tap-name">RAVANGRAD Red Ale 0.5l</span>
